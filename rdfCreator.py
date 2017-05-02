@@ -7,20 +7,20 @@ Created on Mon Apr 24 11:13:13 2017
 from rdflib import Graph
 from rdflib import URIRef, BNode, Literal
 from rdflib.namespace import RDF, FOAF
- 
-#g = Graph()
 
-#bob = URIRef("http://example.org/people/Bob")
-linda = BNode() # a GUID is generated
+g = Graph()
 
-#name = Literal('Bob') # passing a string
-#age = Literal(24) # passing a python int
-#height = Literal(76.5) # passing a python float
-#             
-g.add( (bob, RDF.type, FOAF.Person) )
-g.add( (bob, RDF.type, name) )
-g.add( (bob, FOAF.knows, linda) )
-g.add( (linda, RDF.type, FOAF.Person) )
-g.add( (linda, RDF.type, Literal('Linda') ) )
+#bbc = URIRef("http://www.bbc.co.uk/news/0")
+#linda = BNode() # a GUID is generated
 
-print (g.serialize(format='turtle'))
+# g.add( (bbc, RDF.type, FOAF.Person) )
+# g.add( (bbc, RDF.type, Literal('bbc') ))
+# g.add( (bbc, FOAF.knows, linda) )
+# g.add( (linda, RDF.type, FOAF.Person) )
+# g.add( (linda, RDF.type, Literal('Linda') ) )
+# g.serialize(destination='output.rdf', format='xml')
+def output_rdf():
+    g.serialize(destination='output.rdf', format='xml')
+
+def add_triple(uri, type, value):
+        g.add(uri, type, value)

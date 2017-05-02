@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:ns1="http://xmlns.com/foaf/0.1/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:nodeID="N7a51a9cfe8624ad699e675853405bb5c">
+    <rdf:type>Linda</rdf:type>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.bbc.co.uk/news/0">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:type>bbc</rdf:type>
+    <ns1:knows rdf:nodeID="N7a51a9cfe8624ad699e675853405bb5c"/>
+  </rdf:Description>
+</rdf:RDF>
