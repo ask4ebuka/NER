@@ -2,7 +2,7 @@ from flask import Flask, redirect, url_for, request
 app = Flask(__name__)
 
 @app.route('/texts',methods = ['POST', 'GET'])
-def login():
+def RDF_TEXT():
    if request.method == 'POST':
       user = request.form['nm']
       return redirect(url_for('RDF',name = user))
